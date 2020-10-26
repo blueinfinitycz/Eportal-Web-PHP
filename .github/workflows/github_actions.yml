@@ -2,10 +2,10 @@ name: Eportal web php
 on:
   push:
     branches:
-      -master
-  jobs:
-    FTP- Deploy -Action:
-    name: Ftp-Deploy-Action
+      - master
+jobs:
+  FTP- Deploy -Action:
+  name: Ftp-Deploy-Action
     steps:
     uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
     with:
