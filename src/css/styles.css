@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'Fedra_500';
+  src: url('../fonts/FedraSansAltPro-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fedra_300';
+  src: url('../fonts/FedraSansAltPro-Book.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fedra_300_italic';
+  src: url('../fonts/FedraSansAltPro-BookItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Fedra_400';
+  src: url('../fonts/FedraSansAltPro-Demi.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fedra_200';
+  src: url('../fonts/FedraSansAltPro-Light.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+html {
+  font-size: 10px;
+}
+body {
+  padding-top: 74px;
+  background: #000000 url(../img/pozadi.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Fedra', 'Roboto', sans-serif;
+  color: #ffffff;
+}
+h1 {
+  font-family: Fedra_200;
+  font-size: 1.5vw;
+  color: #ffffff;
+  margin-left: 15px;
+}
+h2 {
+  font-family: Fedra_200;
+  font-size: 1vw;
+  color: #ffffff;
+  margin-left: 15px;
+}
+h3 {
+  font-family: Fedra_400;
+  font-size: 1vw;
+  color: #ffffff;
+  margin-left: 15px;
+}
+.menu__container .navbar-default {
+  background-color: #191919;
+  border-bottom-color: #565759;
+}
+.menu__container .navbar-default li a {
+  color: #b3b3b3;
+}
+.menu__container .navbar-default li a:hover {
+  color: white;
+}
+.modal .modal-title,
+.modal .modal-body {
+  color: #191919;
+}
+.btLink {
+  font-family: Fedra_200;
+  font-size: 0.8vw;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px 50px 25px 20px;
+  width: 100%;
+  height: 90px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  text-align: left;
+  margin: 5px 0;
+}
+.btLink:hover {
+  background-color: #000000;
+  color: inherit;
+}
+.dashboard__section {
+  margin-bottom: 30px;
+}
+@media (max-width: 1500px) {
+  .btLink,
+  h3 {
+    font-size: 1.3vw;
+  }
+}
+@media (max-width: 992px) {
+  .btLink,
+  h3 {
+    font-size: 1.5vw;
+  }
+  h1 {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 768px) {
+  .btLink {
+    font-size: 2vw;
+    padding: 10px 0;
+    height: 70px;
+    margin-top: 20px;
+  }
+  h1,
+  h2,
+  h3,
+  .btLink {
+    text-align: center;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 5vw;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+  .menu__container .navbar-default .navbar-toggle {
+    padding-left: 8px;
+    width: 35px;
+    height: 35px;
+    border-radius: 18px;
+  }
+  .menu__container .navbar-default .navbar-toggle .icon-bar {
+    width: 17px;
+    height: 3px;
+  }
+  .menu__container .navbar-default .navbar-toggle:hover {
+    background-color: #191919;
+    cursor: default;
+  }
+  .menu__container .navbar-default li a {
+    color: #ba8235;
+    text-align: center;
+  }
+}
+@media (max-width: 570px) {
+  .btLink {
+    font-size: 3vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+}
+@media (max-width: 280px) {
+  .btLink {
+    font-size: 5vw;
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  h3 {
+    font-size: 7vw;
+  }
+}

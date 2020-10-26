@@ -1,0 +1,15 @@
+@txtBlockPadding: right, bottom, left, top;
+@txtBlockMargin: right, bottom, left, top;
+
+//mixins
+.setTxtField(@fontType,@fontSize,@fontColor:#ffffff){
+    font-family: @fontType;
+    font-size: @fontSize;
+    color:@fontColor;
+}
+
+
+.setTxtBlock(@txtBlockPadding,@txtBlockPadding){
+    padding: @padding;
+    margin:@margin;
+}

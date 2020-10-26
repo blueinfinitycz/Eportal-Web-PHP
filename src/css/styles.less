@@ -1,0 +1,130 @@
+@import "variables.less";
+@import "functions.less";
+
+
+html{font-size: 10px;}
+body{
+    padding-top: 74px;
+    background: @bodyBgColor url(../img/pozadi.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Fedra', 'Roboto', sans-serif;
+    color: @mainTxtColor;
+}
+
+h1 {
+    .setTxtField(@title_fnt, @title_size, @mainTxtColor);
+    margin-left: 15px;
+}
+
+h2 {
+    .setTxtField(@subTitle_fnt, @subTitle_size, @mainTxtColor);
+    margin-left: 15px;
+}
+
+h3 {
+    .setTxtField(@thirdTitle_fnt, @thirdTitle_size, @mainTxtColor);
+    margin-left: 15px;
+}
+
+.menu__container {
+    .navbar-default {
+        background-color:@mainBgColor;
+        border-bottom-color: #565759;
+
+        li a {
+            color: #b3b3b3;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.modal .modal-title, .modal .modal-body {color: @mainBgColor;}
+
+.btLink {
+    .setTxtField(@btLink_fnt, @btLink_size, @mainTxtColor);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:25px 50px 25px 20px;
+    width:100%;
+    height:90px;
+    background-color: transparent;
+    border:1px solid #ffffff;
+
+    border-radius: 5px;
+    text-align: left;
+    margin: 5px 0;
+
+    &:hover {
+        background-color: #000000;
+        color:inherit;
+    }
+}
+
+.dashboard__section {
+    margin-bottom: 30px;
+}
+
+// media queries
+
+@media (max-width:1500px) {.btLink, h3 {font-size: 1.3vw;}}
+
+@media (max-width:992px) {
+    .btLink, h3 {font-size: 1.5vw;};
+    h1 {font-size: 2vw;}
+}
+
+@media (max-width:768px) {
+    .btLink {
+        font-size: 2vw;
+        padding: 10px 0;
+        height: 70px;
+        margin-top: 20px;
+    }
+    h1,h2,h3, .btLink {
+        text-align: center;
+    }
+
+    h1 {font-size: 4vw;}
+    h2 {font-size: 5vw;}
+    h3 {font-size: 3vw;}
+
+    .menu__container .navbar-default {
+        .navbar-toggle {
+            padding-left: 8px;
+            width:35px;
+            height: 35px;
+            border-radius: 18px;
+
+            .icon-bar {
+                width:17px;
+                height:3px;
+            }
+
+            &:hover {
+            background-color:@mainBgColor;
+            cursor: default;
+            }
+        }
+
+        li a {
+            color: #ba8235;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .btLink {font-size: 3vw;}
+    h3 {font-size: 4vw;}
+}
+
+@media (max-width: 280px) {
+    .btLink {font-size: 5vw;padding: 0 10px;}
+    h1 {font-size: 8vw;}
+    h2 {font-size: 6vw;}
+    h3 {font-size: 7vw;}
+}
