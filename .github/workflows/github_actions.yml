@@ -6,13 +6,13 @@ on:
 jobs:
   FTP- Deploy -Action:
   name: Ftp-Deploy-Action
-    steps:
-    uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
-    with:
-      ftp_host: ftpx.forpsi.com
-      ftp-username: kouzelnikrobin.cz
-      ftp_password: ${{secrets.FTP_PASSWORD}}
-      local_source_dir: "src"
-      dist_target_dir: "www/test"
-      delete: "true"
-      exclude: "'^logs/' '^README.md'"
+  steps:
+    - uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
+      with:
+        ftp_host: ftpx.forpsi.com
+        ftp-username: kouzelnikrobin.cz
+        ftp_password: ${{secrets.FTP_PASSWORD}}
+        local_source_dir: "src"
+        dist_target_dir: "www/test"
+        delete: "true"
+        exclude: "'^logs/' '^README.md'"
