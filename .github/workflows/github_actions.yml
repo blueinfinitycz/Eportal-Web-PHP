@@ -1,6 +1,9 @@
+name: Eportal web php
 on:
-  push
-  name: Eportal web php
+  push:
+    branches:
+      -master
+  
   jobs:
     FTP-Deploy-Action:
     name: FTP-Deploy-Action
