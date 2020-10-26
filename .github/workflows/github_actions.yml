@@ -1,13 +1,8 @@
-name: Eportal web php
-
 on:
-  push:
-
-    branches:
-            -master
-
-jobs:
-  FTP-Deploy-Action:
+  push
+  name: Eportal web php
+  jobs:
+    FTP-Deploy-Action:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
